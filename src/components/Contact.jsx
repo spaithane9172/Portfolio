@@ -228,7 +228,10 @@ const Contact = () => {
             </span>
           </h1>
           <h1 className="mb-[1rem]">
-            <a href="https://drive.google.com/file/d/1N3yCnRFsW9j52-lK05CR1SH5-JhFi1w6/view?usp=sharing">
+            <a
+              href="https://drive.google.com/file/d/1E_lcXXPOsyG-dRJYG6cx3w4E1YLjR6Ml/view?usp=sharing"
+              target="_blank"
+            >
               <span className="text-[1.1rem] text-gray-400">My Resume</span>
             </a>
           </h1>
