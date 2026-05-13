@@ -8,16 +8,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-gradient-to-r from-slate-500 to-slate-800 w-full h-[100vh] overflow-y-auto">
+      {/* Dark canvas */}
+      <div className="bg-[#0d0d0d] min-h-screen font-sans text-[#f0f0f0] relative">
+        {/* Noise texture overlay */}
+        <div className="noise-overlay" />
         <Navbar />
-        <div className="pt-20 px-[5vw]">
+        <main className="pt-24 relative z-10">
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/projects" element={<Project />} />
-            <Route exact path="/contact" element={<Contact />} />
+            <Route path="/"         element={<Home />} />
+            <Route path="/about"    element={<About />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/contact"  element={<Contact />} />
           </Routes>
-        </div>
+        </main>
       </div>
     </BrowserRouter>
   );

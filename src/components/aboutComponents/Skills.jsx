@@ -1,22 +1,24 @@
 import React from "react";
 import { skillsData } from "../../data/SkillsData";
 
-const Skills = (props) => {
+const Skills = ({ activeMenu }) => {
+  if (activeMenu !== "Skills") return null;
+
   return (
-    <div
-      className={`mt-[1rem] ${
-        props.activeMenu === "Skills" ? "block" : "hidden"
-      } flex flex-wrap w-full md:w-8/10 justify-center overflow-y-auto h-[20rem] scrollbar`}
-    >
-      {skillsData.map((e, index) => (
-        <div
-          key={index}
-          className="bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 rounded-xl shadow-xl w-[8rem] h-[7rem] flex flex-col justify-center items-center amaranth-regular mr-[1rem] mb-[1rem]"
-        >
-          <img src={e.photo} alt="" className="w-[2rem] h-[2rem] mb-[0.5rem]" />
-          <h1 className="text-gray-400 font-bold">{e.title}</h1>
-        </div>
-      ))}
+    <div className="fade-in">
+      <p className="text-sm text-muted mb-6">Technologies and tools I use to build great products.</p>
+      <div className="flex flex-wrap gap-3">
+        {skillsData.map((skill, i) => (
+          <span
+            key={i}
+            className="skill-pill"
+            style={{ animationDelay: `${0.04 * i}s` }}
+          >
+            <img src={skill.photo} alt={skill.title} className="w-4 h-4 object-contain" />
+            {skill.title}
+          </span>
+        ))}
+      </div>
     </div>
   );
 };

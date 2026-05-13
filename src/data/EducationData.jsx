@@ -1,22 +1,9 @@
+// This file is no longer used directly — education is handled inside About.jsx
 export const educationData = [
   {
-    year: 2023,
-    course: "Computer Engineering",
-    clg: "NBN Sinhgad School of Engineering Pune.",
-  },
-  {
-    year: 2019,
-    course: "COPA",
-    clg: "Gov. ITI Pathri.",
-  },
-  {
-    year: 2018,
-    course: "HSC",
-    clg: "Nutan Mahavidyalaya Selu.",
-  },
-  {
-    year: 2016,
-    course: "SSC",
-    clg: "Nutan Vidyalaya Selu.",
+    year: "Jun 2019 – Jul 2023",
+    course: "Bachelor of Computer Engineering",
+    clg: "NBN Sinhgad School of Engineering, Ambegaon BK, Pune",
+    grade: "8.52 CGPA",
   },
 ];
