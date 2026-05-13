@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { fadeUp, slideInLeft, slideInRight, staggerContainer, viewport } from "../animations";
